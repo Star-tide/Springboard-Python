@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block TITLE %} Madlib Generator {% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% block BODY%}
+    <div id='form'>
+        <h1>Madlib Form</h1>
+        <form action="/form">
+            <label for="place">Place</label>
+            <input type="text" name="place" placeholder='enter place'id="place">
+            <label for="noun">Noun</label>
+            <input type="text" name="noun" placeholder='enter noun'id="noun">
+            <label for="verb">Verb</label>
+            <input type="text" name="verb" placeholder='enter verb'id="verb">
+            <label for="adjective">Adjective</label>
+            <input type="text" name="adjective" placeholder='enter adjective'id="adjective">
+            <label for="plural_noun">Plural Noun</label>
+            <input type="text" name="plural_noun" placeholder='enter plural_noun'id="plural">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    {% endblock %}
+    <footer>By: Brandon Nesslage</footer>
+</body>
+</html>
